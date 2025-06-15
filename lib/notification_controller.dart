@@ -68,7 +68,7 @@ class NotificationController {
       return;
     }
 
-    final baseUrl = 'https://rabotniki.dat-studio.com';
+    final baseUrl = 'https://rabotniki.online/';
     final uri = Uri.parse('$baseUrl/api/save-fcm-token');
 
     final cookieManager = CookieManager.instance();

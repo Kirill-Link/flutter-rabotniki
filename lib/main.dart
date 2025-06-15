@@ -100,7 +100,7 @@ class _WebViewContainerState extends State<WebViewContainer> {
     if (chatId != null && chatId.isNotEmpty) {
       _controller?.loadUrl(
         urlRequest: URLRequest(
-          url: WebUri('https://rabotniki.dat-studio.com/chat?chatId=$chatId'),
+          url: WebUri('https://rabotniki.online/chat?chatId=$chatId'),
         ),
       );
     }
@@ -122,7 +122,7 @@ class _WebViewContainerState extends State<WebViewContainer> {
         child: Padding(
           padding: EdgeInsets.only(bottom: keyboardHeight),
           child: InAppWebView(
-            initialUrlRequest: URLRequest(url: WebUri('https://rabotniki.dat-studio.com')),
+            initialUrlRequest: URLRequest(url: WebUri('https://rabotniki.online')),
             initialSettings: InAppWebViewSettings(
               javaScriptEnabled: true,
               useShouldOverrideUrlLoading: true,

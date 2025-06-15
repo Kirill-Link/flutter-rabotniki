@@ -51,5 +51,22 @@
     <true/>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
+
+    <!-- 🔥 Обязательное для Firebase -->
+    <key>FirebaseAppDelegateProxyEnabled</key>
+    <false/>
+
+    <!-- ⚠️ Разрешаем любые подключения (если сайт http или работает нестандартно) -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+
+    <!-- 🎯 Уведомления в фоне -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>remote-notification</string>
+    </array>
 </dict>
 </plist>
