@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926318326775",
+    "project_id": "rabotniki-aa9a3",
+    "storage_bucket": "rabotniki-aa9a3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926318326775:android:4be99e95869825b6ac34f2",
+        "android_client_info": {
+          "package_name": "com.example.rabotniki"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVq2Cbl8UH_sslXJ2GephqvjFHlYSNnCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
