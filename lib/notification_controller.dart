@@ -44,6 +44,7 @@ class NotificationController {
     void Function(Map<String, dynamic>) onTap,
     InAppWebViewController? controller,
   ) {
+    FirebaseMessaging.instance.requestPermission();
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       final notification = message.notification;
       final data = message.data;
@@ -68,7 +69,7 @@ class NotificationController {
       return;
     }
 
-    final baseUrl = 'https://rabotniki.online/';
+    final baseUrl = 'https://rabotniki.online';
     final uri = Uri.parse('$baseUrl/api/save-fcm-token');
 
     final cookieManager = CookieManager.instance();
