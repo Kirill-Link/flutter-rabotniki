@@ -1,0 +1,15 @@
+workflows:
+  ios-workflow:
+    name: iOS build without code signing
+    max_build_duration: 30
+    environment:
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Build iOS app
+        script: |
+          flutter clean
+          flutter pub get
+          flutter build ios --release --no-codesign
+    artifacts:
+      - build/ios/iphoneos/Runner.app
