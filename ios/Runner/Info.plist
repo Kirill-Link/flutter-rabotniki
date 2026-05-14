@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>Rabotniki</string>
+    <string>Hando</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>rabotniki</string>
+    <string>magic_smile</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -50,14 +50,14 @@
     <key>CADisableMinimumFrameDurationOnPhone</key>
     <true/>
     <key>UIViewControllerBasedStatusBarAppearance</key>
-    <false/>
+    <true/>
 
     <key>io.flutter.embedded_views_preview</key>
     <true/>
 
     <!-- 🔥 Обязательное для Firebase -->
     <key>FirebaseAppDelegateProxyEnabled</key>
-    <false/>
+    <true/>
 
     <!-- ⚠️ Разрешаем любые подключения (если сайт http или работает нестандартно) -->
     <key>NSAppTransportSecurity</key>
@@ -70,6 +70,14 @@
     <key>UIBackgroundModes</key>
     <array>
         <string>remote-notification</string>
+    </array>
+    <!-- 📞 Поддержка схем URL для mailto, tel, sms, market -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>mailto</string>
+        <string>tel</string>
+        <string>sms</string>
+        <string>market</string>
     </array>
 </dict>
 </plist>

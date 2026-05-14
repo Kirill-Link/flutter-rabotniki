@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rabotniki">
+    package="com.magicsmile.magicsmile">
 
     <!-- Разрешения -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
-        android:label="rabotniki"
+        android:label="magic_smile"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true">
@@ -41,7 +41,7 @@
         <!-- FileProvider для съемки фото -->
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.rabotniki.fileprovider"
+            android:authorities="com.magicsmile.magicsmile.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
